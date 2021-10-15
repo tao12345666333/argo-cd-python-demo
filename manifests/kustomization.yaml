@@ -1,0 +1,11 @@
+# kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+images:
+- name: ghcr.io/tao12345666333/argo-cd-demo/argo-cd-demo
+  newTag: 26a41b369377d5b663a19e91a93f208ed3da28ae
+
+resources:
+- deployment.yaml
+- service.yaml
